@@ -9,6 +9,9 @@ class Post
     @title = title
     @@all << self
   end
+  def all
+    @@all
+  end
 
   def author_name
     if @author == nil
